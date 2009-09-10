@@ -2,7 +2,9 @@ require 'rubygems'
 require 'sanitize'
 require 'feedzirra'
 
-feed = Feedzirra::Feed.fetch_and_parse('http://www.facebook.com/feeds/notifications.php?id=661315101&viewer=661315101&key=55bad83173&format=rss20')
+rss_feed = ''
+
+feed = Feedzirra::Feed.fetch_and_parse(rss_feed)
 
 loop do
   sleep(30)
